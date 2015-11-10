@@ -4,14 +4,17 @@
 #include "Bee.h"
 
 int main(){
-    Bee myHoney;
+    Bee honeyPants;
     int a;
 
     std::cout<<"Please enter number of honeys:"<<std::endl;
     std::cin>>a;
 
-    myHoney.makeHoney(a);
+    Honey *someHoney = honeyPants.makeHoneyFaster(a);
 
+    //honeyPants.makeHoney(a);
 
+    honeyPants.putHoneyIn(someHoney);
+    honeyPants.putHoneyIn(someHoney);
     return 0;
 }

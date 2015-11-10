@@ -7,14 +7,14 @@
 
 #include <unistd.h>
 #include <iostream>
-
+#include "Honey.h"
 class Bee {
 
     public:
         Bee();
-
-        void makeHoney(int numberOfHoney);
-
+        Honey* makeHoney(int numberOfHoney);
+        Honey* makeHoneyFaster(int numberOfHoney);
+        void putHoneyIn(Honey* myHoney);
     private:
         int theHoney;
 
